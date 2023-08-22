@@ -1,0 +1,99 @@
+.menu-card{
+    border-width: 3px;
+    border-style: dashed;
+    border-color: rgb(133, 136, 133);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+
+}
+.card1{
+    width: 380px;
+    height: 450px;
+    position: relative;
+    perspective: 800px;
+    right: 6cm;
+}
+.front h1{
+    text-align: center ;
+    
+}
+.front,.back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all 1s;
+    border: 2px solid #420fcf;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.front{
+    background-color:rgb(240, 240, 240);
+    color: black;
+    
+}
+.back{
+    background-color: antiquewhite;
+    transform: rotateY(-180deg);
+}
+.card1:hover .front{
+    transform: rotateY(180deg);
+}
+.card1:hover .back{
+    transform: rotateY(0); 
+}
+.titl{
+ text-align: center;   
+}
+.a{
+    align-items: flex-end;
+}
+.g p{
+    color: aliceblue;
+    align-items: end;
+}
+.container{
+    padding: 2px 16px;
+}
+
+
+.titl{
+    text-align: center;  
+    font-size: 40px; 
+   }
+.card_menu{
+    width: 380px;
+    height: 450px;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transform-origin: right bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    font-family: 'Arimo', sans-serif;
+    line-height: 1.5;
+
+}
+.card_menu img{
+    width: 15%;
+  position: absolute;
+  line-height: 1.5;
+}
+.menu-card{
+    right: 50cm;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+  margin-left: -200px;
+    
+}

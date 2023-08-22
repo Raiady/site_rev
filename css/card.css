@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Handjet&display=swap');
+
+.card {
+    width: 550px;
+    height: 480px;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transform-origin: right bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    font-family: 'Arimo', sans-serif;
+}
+
+.card p {
+    font-size: 1.23rem;
+}
+
+.card:hover {
+    transform: rotate(8deg);
+}
+
+.sobre-img img {
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+  
+}
+
+.Btn {
+  column-gap: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(54, 24, 187);
+}
+
+.sign {
+    width: 100%;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign svg {
+    width: 17px;
+}
+
+.sign svg path {
+    fill: white;
+}
+
+.Btn:hover .sign {
+    width: 30%;
+    transition-duration: 0.3s;
+    padding-left: 20px;
+}
+
+.Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: 0.3s;
+    padding-right: 10px;
+}
+
+.Btn:active {
+    transform: translate(2px, 2px);
+}
+
+.mensagem-container {
+    display: flex;
+    align-items: center;
+}
+
+.mensagem {
+    width: 40em;
+    display: none;
+    padding: 5px;
+    margin-left: 1em;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.23rem;
+}

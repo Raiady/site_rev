@@ -9,27 +9,72 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-  <header>
-    <a href="#" class="logo">Food Projet</a>
-    <div class="bx bx-menu" id="menu-icon"></div>
-    <ul class="navbar">
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#sob">Sobre</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#serv">Serviços</a></li>
-        <li><a href="#conts">Contato</a></li>
-    </ul>
-  </header> 
-  <!--seção do inicio--> 
-  <section class="home" id="home">
-    <div class="home-text">
-        <h1>Foods</h1>
-        <h2>most presciosos <br>menu</h2>
-        <a href="#" class="btn">Today's Menu</a>
+  <!--Menu principal-->
+    <header>
+        <a href="#" class="logo">Food Projet</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#sob">Sobre</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#serv">Serviços</a></li>
+            <li><a href="#conts">Contato</a></li>
+        </ul>
+    </header>
+    <!--seçao principal contendo o inicio do projeto-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Foods</h1>
+            <h2>most presciosos <br>menu</h2>
+            <a href="#" class="btn">Today's Menu</a>
+        </div>
+        <div class="principal-img">
+            <img src="../img/hamburguer.png" alt="">
+        </div>
+    </section>
+    <!--Seção sobre o estabelecimento-->
+    <section class="sobre" id="about">
+        <div class="card">
+            <img class="sobre-img"src="../img/fritas.png" alt="fritas" sizes="100x200" style="position:sticky;">
+            <p><b>Nossos fundadores, apaixonados por gastronomia,
+            decidiram criar um lugar onde as pessoas pudessem
+            desfrutar de hambúrgueres feitos com ingredientes frescos 
+            e saborosos.</b></p> 
+        </div>
+        <!--parte contendo um card personalizado com botão-->
+        <div class="mensagem-container">
+            <button class="Btn" id="botao">
+                <div class="sign">
+                    <svg viewBox="0 0 512 512">
+                        <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9
+                        406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 
+                        0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 
+                        3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32
+                         14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 
+                        43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path>
+                    </svg>
+                </div>
+            </button>
+            <!--mensagem lateral-->
+            <div class="mensagem">
+                Nossa equipe é composta por chefs talentosos e dedicados, que estão 
+                sempre em busca de novas combinações 
+                de sabores para surpreender os paladares dos nossos clientes.
+                Cada hambúrguer é preparado com cuidado e atenção aos detalhes.
+            </div>
+        </div>
+    </section>
+    <div class="titl">
+      <span>Menu da Semana</span>
+      <h2>Os Melhores lanches da cidade</h2>
     </div>
-    <div class="principal-img">
-        <img src="../img/hamburguer.png" alt="">
-    </div>
-  </section>
+    <!--card-menu-->
+    <section class="menu-card" id="menu-card" style="left: 25cm;">
+      <div class="card_menu">
+        
+      </div>
+
+    </section>
+    <script src="../js/page.js"></script>
 </body>
 </html>
