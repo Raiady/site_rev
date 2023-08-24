@@ -44,8 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 45px;
-    height: 45px;
+    width: 10px;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -63,11 +62,11 @@
     justify-content: center;
 }
 
-.sign svg {
-    width: 17px;
+.sign fa-solid {
+    width: 10px;
 }
 
-.sign svg path {
+.sign fa-solid {
     fill: white;
 }
 

@@ -1,3 +1,4 @@
+@import url(../css/main.css);
 .titl{
     text-align: center;  
     font-size: 40px; 
@@ -24,52 +25,110 @@
   }
   
   .front{
-    background-color: #272727;
-    color: #fff;
+    background-color: #fdfafa;
+    color: #080808;
   }
   
-  .back{
-    background-color: #03FA6E;
-    transform: rotateY(-180deg);
-  }
-  
-  .card1:hover .front{
-    transform: rotateY(180deg);
-  }
-  
-  .card1:hover .back{
-    transform: rotateY(0);
-  }
   .front img{
-    max-width: 100%;
-    display: block;
-    padding-bottom: 2.6cm;
+   align-items: centers;
+   width: 100%;
+   height: 100%;
+    
     
   }
-  .front p{
+  .front h1{
     position: absolute;
-    bottom:2cm;
+    top:0;
     width: 100%;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    color: var(--shadon);
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
   }
-  .front button {
+  .front span{
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom:0cm;
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+    color: var(--text-color);
+    text-align: left;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,92,29,1) 69%, rgba(252,176,69,1) 100%);;
+  }
+  .front i{
+    position: absolute;
+    bottom:0cm;
+    width: 100%;
+    padding: 10px;
+    color: var(--text-color);
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    right: 0;
+  }
+   button {
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--shadon);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 2em;
+  font-weight: bold;
+  font-size: 20px;
+  }
+  button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--shadon);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  button:hover .arrow:before {
+    right: 0;
   }
   .menu-card{
       display: grid;
       grid-template-columns: repeat(7, 1fr);
       grid-gap: 2.5rem;
       align-items: center;
-      margin-left: -230px;
+      margin-left: -180px;
   }
