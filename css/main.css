@@ -3,6 +3,7 @@
 @import url(../css/card.css);
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Handjet&display=swap');
 @import url(../css/card_menu.css);
+@import url(../css/sev.css);
 
 /* Configurações gerais */
 * {
@@ -188,4 +189,5 @@ section {
     background: darkslateblue;
     transition: .3s;
    }
+
 }

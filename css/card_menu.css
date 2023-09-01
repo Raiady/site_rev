@@ -3,6 +3,10 @@
     text-align: center;  
     font-size: 40px; 
    }
+.titl span{
+    color:var(--shadon);
+    font-weight: bold;
+  }
 .card1{
     width: 200px;
     height: 300px;
@@ -57,7 +61,7 @@
     font-size: 25px;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
-    background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,92,29,1) 69%, rgba(252,176,69,1) 100%);;
+    background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,92,29,1) 69%, rgba(252,176,69,1) 100%);
   }
   .front i{
     position: absolute;
